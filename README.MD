@@ -1,8 +1,33 @@
 Project proposal
 
-Game type: Monopoly Team Member: WANG Ziyu (UID: 3035777547)
+Game type: Monopoly 
+Team Member: WANG Ziyu (my groupmate dropped the class so I'm now the only member)
+UID: 3035777547
 
-Description of the game: You have been chosen by the richest person to enter his investment contest! He will give you and another candidate (the computer) a sum of money. Then whoever has the most assets by the deadline will inherit the richest person's fortune! Also, if one goes bankrupt, the other wins outright.
+Description of the game (game story): 
+You have been chosen by the richest person to enter his investment contest! He will give you and another candidate (the computer) a sum of money. Then whoever wins the game will inherit the richest person's fortune!
+  
+Game rules: 
+  (1) The palyer should enter a specific number + press the enter key to conduct certain actions. For example, there're the statements in the game:  
+  
+             (1) Continue  (2) Pause   -- '(1)': enter 1 + press the enter key           
+                                       -- '(2)': enter 2 + press the enter key           
+             (3) Check the assets details                                                
+                                       -- '(3)': enter 3 + press the enter key           
+                                                                                         
+  (2) In this game, the player can roll a die, draw cards, purchase land, and upgrade it (start with 0, The maximum level of land is 2). 
+  (3) The player's chess in the map is 'A' and computer's chess is 'B'.
+  (4) If you are at a computer-owned land, you will have to pay a toll, and vice versa.
+  (5) The amount of toll will be 0.1 * current land value. You can upgrade the land to increase its value and get more toll (charge for leveling up: 0.3 * current land value). 
+  (6) The game ends after certain months (rounds) chosen by you. 3 options are provided in the begining of a new game: 12 months, 24 months, 36 months.
+  (7) Meanwhile, the computer's action will be automatically conducted by the program.
+  (8) Wining conditions (Achieving any of the following terms is considered a victory): (1) Having the most assets (cash + value of housing properties) when there's no time   left (i.e. Months = 0). (2) If one goes bankrupt (i.e. cash own = 0), the other wins outright.            
+  Note: The palyer can check these information (game description and game rules) in the pause page at your turn.       
+
+
+
+
+
 
 The player's main action in Monopoly is to roll a die, draw cards, purchase land, build houses, and upgrade houses. The game ends after certain months (rounds) chosen by the player (2 options provided: 12 months, 24 months). Meanwhile, the computer's action will be automatically conducted by the program.
 
