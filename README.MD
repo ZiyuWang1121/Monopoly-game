@@ -50,8 +50,9 @@ Game features implemented:
 (13) Calculate and compare the total assets (cash and the value of lands) of the player and the computer at the end of the game (if no time left).
 (14) The basic function of judging the outcome of the battle (Success conditon: (1) the computer goes bankrupt (cash is 0) during the game; (2) the player has the highest total assets at the end of the game.)
 (15) Distinguish the player and the computer's turn by using different colors for them (black: player, purple: computer).
+(16) Player can select the game mode at the start of a new game. 3 options are provided in the begining of a new game: 12 months, 24 months, 36 months.
 
-The roles of supported coding elements (as only half of the code requirements are expected for a group of 1 member, you might mainly look at element 1, 2, and 4):
+The roles of supported coding elements
 Element 1: Generation of random game sets or events
 Features it supports: feauture 2 and 11
 How: There're random functions to generate random events (using things like srand(), the random number generator (RNG) rand() with the current time as the seed); Set specific numbers to label the events geneated and latter use if statements/ switch statements to identify and execute the result.
@@ -69,4 +70,5 @@ Features it supports: feature 1, 6
 How: Depending on the player's choice, the map and assets related informaion are read and store from the text file (Start a new game: "map.txt"; continue the last game: "save.txt", if there is an archive). The player can choose to save and quit the game in the pause page. The player quit the game, but the data are saved. The current map and assets related information are read from the data structures and store in the file "save.txt" (create a new one if there's none, shroud the previous one if the file already exists). 
 
 Element 5: Program codes in multiple files
-Features it supports: none, this requirement is not satisfied in the project.
+Features it supports: feature 6, 16
+How: The function "select_round" and "rule" are displayed in other files other than the main file to improve clarity and construction of the program. As the game rules shown and the mode selected have to be updated oftently, it's nice to put it in a seperate file and later link all the program codes together in the compilation. That way we don't accidentally delete other important code. 
