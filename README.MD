@@ -4,6 +4,13 @@ Game type: Monopoly
 Team Member: WANG Ziyu (my groupmate dropped the class so I'm now the only member)
 UID: 3035777547
 
+Compilation and execution instructions:
+(1) The SSH Client, Command Prompt, introduced in module 0 is recommanded for playing the game
+(2) Sever used for testing: academy11 server
+(3) To compile and run the new monopoly program, we need to input command:
+$ g++ -pedantic-errors -std=c++11 monopoly_main.cpp select_round.cpp rule.cpp -o monopoly
+$ ./monopoly
+
 Problem statement:
 I chose this topic because it is both challenging and too interesting for me to give up. A monopoly game appears that it will made with many programming knowledge involved, which can furthely cultivate my understanding in this couse. Meanwhile, I used to play monopoly in my childhood and I'm familiar with it. It feels fun to make a similar game appears in the screen.
 
@@ -52,7 +59,7 @@ Game features implemented:
 (15) Distinguish the player and the computer's turn by using different colors for them (black: player, purple: computer).
 (16) Player can select the game mode at the start of a new game. 3 options are provided in the begining of a new game: 12 months, 24 months, 36 months.
 
-The roles of supported coding elements
+The roles of supported coding elements:
 Element 1: Generation of random game sets or events
 Features it supports: feauture 2 and 11
 How: There're random functions to generate random events (using things like srand(), the random number generator (RNG) rand() with the current time as the seed); Set specific numbers to label the events geneated and latter use if statements/ switch statements to identify and execute the result.
