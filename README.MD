@@ -5,7 +5,7 @@ Team Member: WANG Ziyu (my groupmate dropped the class so I'm now the only membe
 UID: 3035777547
 
 Compilation and execution instructions:
-(1) The SSH Client, Command Prompt, introduced in module 0 is recommanded for playing the game
+(1) The SSH Client, Command Prompt, introduced in module 0 is recommanded for playing the game.
 (2) Sever used for testing: academy11 server
 (3) To compile and run the new monopoly program, we need to input command:
 $ g++ -pedantic-errors -std=c++11 monopoly_main.cpp select_round.cpp rule.cpp -o monopoly
