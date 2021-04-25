@@ -26,7 +26,7 @@ Other places needed input from the player but don't appear in this form will com
 (9) Meanwhile, the computer's action will be automatically conducted by the program.
 (10) Wining conditions (Achieving any of the following terms is considered a victory): 
     1. Having the most assets (cash + value of housing properties) when there's no time left (i.e. Months = 0). 
-    2. If one goes bankrupt (i.e. cash own = 0), the other wins outright.  
+    2. If one goes bankrupt (i.e. cash own < 0), the other wins outright.  
 
 Game features implemented:
 (1) The player can choose to start a new game or continue the last saved game.
