@@ -4,6 +4,12 @@ Game type: Monopoly
 Team Member: WANG Ziyu (my groupmate dropped the class so I'm now the only member)
 UID: 3035777547
 
+Problem statement:
+I chose this topic because it is both challenging and too interesting for me to give up. A monopoly game appears that it will made with many programming knowledge involved, which can furthely cultivate my understanding in this couse. Meanwhile, I used to play monopoly in my childhood and I'm familiar with it. It feels fun to make a similar game appears in the screen.
+
+Game concept:
+Monopoly here is a text-based game, which only requires an individual player to trigger events and make choices. Contestants gain setup money in the game, and by chance and trading strategies to buy land and upgrade it to earn toll. There are now three game endings for player to explore.
+
 Description of the game (game story): 
 You have been chosen by the richest person to enter his investment contest! He will give you and another candidate (the computer) a sum of money. Then whoever wins the game will inherit the richest person's fortune!
   
