@@ -14,7 +14,8 @@ Game rules:
                                        -- '(2)': enter 2 + press the enter key           
              (3) Check the assets details                                                
                                        -- '(3)': enter 3 + press the enter key           
-                                                                                         
+ 
+Other places needed input from the player but don't appear in this form will come with instruction measages. 
 (2) In this game, the player can roll a die, draw cards, purchase land, and upgrade it (start with 0, The maximum level of land is 2). Meanwhile, the computer's action will be automatically conducted by the program.
 (3) The palyer can check the assets details for him/her and the computer at his/her turn by enter 3 + press the enter key.
 (4) The palyer can check the game description and game rules in the pause page at his/her turn.
@@ -49,20 +50,16 @@ Features it supports: feauture 2 and 11
 How: There're random functions to generate random events (using things like srand(), the random number generator (RNG) rand() with the current time as the seed); Set specific numbers to label the events geneated and latter use if statements/ switch statements to identify and execute the result.
 
 Element 2: Data structures for storing game status
-Features it supports: feauture 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13, 14
-How: 
-· Employ "int Bank[2]" array to add up the cash and the value of the houses. · Adopt "int cash[2]" array, which can set up the same amunt of starting fund for both computer and player and will be updated during the game. · Employ if-else statement that if either computer or player step in others' houses, the fee is deducted from their cash array. Once there's no cash, the program will check the condition of the holding of lands. The property right of lands own could be sold to the bank in exchange of cash. · Employ for loop to continue the game when j<=n (n is the rounds of the game). When the deadline comes, the total assets will be calculated, then use an if-else statement to decide and output the winner. · Employ if-else statement to automatically add one block if player and computer overlap. · Use the add statement in the array and move the player and computer. Where they stand authomatically cout '1'.
+Features it supports: feauture 2, 3, 4, 5, 7, 9, 10, 11, 12, 13, and 14
+How: After the input from the file "map.txt"/"save.txt", the map and assets related informaion are stored using struct and dynamic arrays (e.g.the cash array stores the set up the same amunt of starting fund for both computer and player if this is a new game). There're latter modifications on them as the game process (like encounter a random event, buy land, and pay toll). For example, if the player roll the dice, the result will be processed in array position. The chess piece will then move,; it can disapper in the previous block and appear in the new block. Another example: If a land is bought/upgraded, its information will be recored/changed in the buyer's column in the check assets detail page. And when a land is upgraded, its level and value will increase. Changes like that are shown in the map page or check assets detail page using cout. Also, if either computer or player step in others' houses, the fee is deducted from their cash array. A while loop are monitoring the time left and cash left to continue the game. There are other arrays like total_assets[2], which will store the calculation result for the total assets (the cash and the value of the lands) at the end of the game, then if-else statements are used to decide and output the corresponding ends. 
 
 Element 3: Dynamic memory management 
-Features it supports: 2, 3, 10
+Features it supports: 2, 3, 5, 7, 9, 10, 11, 12, 13, and 14
 How: Employing dynamic arrays like position, round, cash, and len to make the system data storage flexible, then free them at the end of the code, prompting the efficiency of allocating system resources.
 
 Element 4: File input/output:
 Features it supports: feature 1, 6
-How: 
--input： · Using if-else statement to ask the player about his/her decision (want to purchase land, build house, or upgrade it). · Employ while loop, if the player press "Pause", then the game ends but the record of bank[2] and cash[2] and houses remains. when the player press "restart" then game starts again.
-
--output： · (1) Using cout or printf print the maps and setup in the screen; (2) when the piece move, it disapper in the previous block and appear in the new block; (3) If a land is bought, * (to represent the player) or # (to represent the computer) will be printed next to the related place's name. Also, if an house is upgraded, the number of * or # will increase. For example, if the player bought hku before, the display of the block is currently hku*. Then if the player decide to buid a house here, the display will be hku**. Furthely, if the player upgraded the house, the display will be hku***, which reaches the limit of developing the land.
+How: Depending on the player's choice, the map and assets related informaion are read and store from the text file (Start a new game: "map.txt"; continue the last game: "save.txt", if there is an archive). The player can choose to save and quit the game in the pause page. The player quit the game, but the data are saved. The current map and assets related information are read from the data structures and store in the file "save.txt" (create a new one if there's none, shroud the previous one if the file already exists). 
 
 Element 5: Program codes in multiple files
 Features it supports: none, this requirement is not satisfied in the project.
