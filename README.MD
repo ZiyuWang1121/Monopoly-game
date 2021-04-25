@@ -43,6 +43,7 @@ Game features implemented:
 (12) Enabling the player and the computer to pay tolls when they pass another's lands. The tolls will be determined according to the condition of the land.
 (13) Calculate and compare the total assets (cash and the value of lands) of the player and the computer at the end of the game (if no time left).
 (14) The basic function of judging the outcome of the battle (Success conditon: (1) the computer goes bankrupt (cash is 0) during the game; (2) the player has the highest total assets at the end of the game.)
+(15) Distinguish the player and the computer's turn by using different colors for them (black: player, purple: computer).
 
 The roles of supported coding elements (as only half of the code requirements are expected for a group of 1 member, you might mainly look at element 1, 2, and 4):
 Element 1: Generation of random game sets or events
