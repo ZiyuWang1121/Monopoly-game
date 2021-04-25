@@ -44,15 +44,25 @@ Game features implemented:
 (14) The basic function of judging the outcome of the battle (Success conditon: (1) the computer goes bankrupt (cash is 0) during the game; (2) the player has the highest total assets at the end of the game.)
 
 The roles of supported coding elements (1 to 5 listed under the coding requirements):
+Element 1: Generation of random game sets or events
+Features it supports: feauture 2 and 11
+How: There're random functions to generate random events (using things like srand(), the random number generator (RNG) rand() with the current time as the seed); Set specific numbers to label the events geneated and latter use if statements/ switch statements to identify and execute the result.
 
-Generation of random game sets or events: · Random functions to conduct random events (srand(), the random number generator (RNG) rand()); The seed might be the value of the time that the system returns for the current time. Set specific numbers to label the events within if and random statements and execute the result.
+Element 2: Data structures for storing game status
+Features it supports: feauture 4, 5, 6, 7, 9, 12
+How: 
+s: · Employ "int Bank[2]" array to add up the cash and the value of the houses. · Adopt "int cash[2]" array, which can set up the same amunt of starting fund for both computer and player and will be updated during the game. · Employ if-else statement that if either computer or player step in others' houses, the fee is deducted from their cash array. Once there's no cash, the program will check the condition of the holding of lands. The property right of lands own could be sold to the bank in exchange of cash. · Employ for loop to continue the game when j<=n (n is the rounds of the game). When the deadline comes, the total assets will be calculated, then use an if-else statement to decide and output the winner. · Employ if-else statement to automatically add one block if player and computer overlap. · Use the add statement in the array and move the player and computer. Where they stand authomatically cout '1'.
 
-Data structures for storing game status: · Employ "int Bank[2]" array to add up the cash and the value of the houses. · Adopt "int cash[2]" array, which can set up the same amunt of starting fund for both computer and player and will be updated during the game. · Employ if-else statement that if either computer or player step in others' houses, the fee is deducted from their cash array. Once there's no cash, the program will check the condition of the holding of lands. The property right of lands own could be sold to the bank in exchange of cash. · Employ for loop to continue the game when j<=n (n is the rounds of the game). When the deadline comes, the total assets will be calculated, then use an if-else statement to decide and output the winner. · Employ if-else statement to automatically add one block if player and computer overlap. · Use the add statement in the array and move the player and computer. Where they stand authomatically cout '1'.
+Element 3: Dynamic memory management 
+Features it supports:
+How: 
+. Employ dynamic 2D arrays to make the system data storage flexible, prompting the efficiency of allowcating system resources.
 
-Dynamic memory management: . Employ dynamic 2D arrays to make the system data storage flexible, prompting the efficiency of allowcating system resources.
 
-File input/output: -input： · Using if-else statement to ask the player about his/her decision (want to purchase land, build house, or upgrade it). · Employ while loop, if the player press "Pause", then the game ends but the record of bank[2] and cash[2] and houses remains. when the player press "restart" then game starts again.
+Element 4: File input/output: 
+-input： · Using if-else statement to ask the player about his/her decision (want to purchase land, build house, or upgrade it). · Employ while loop, if the player press "Pause", then the game ends but the record of bank[2] and cash[2] and houses remains. when the player press "restart" then game starts again.
 
 -output： · (1) Using cout or printf print the maps and setup in the screen; (2) when the piece move, it disapper in the previous block and appear in the new block; (3) If a land is bought, * (to represent the player) or # (to represent the computer) will be printed next to the related place's name. Also, if an house is upgraded, the number of * or # will increase. For example, if the player bought hku before, the display of the block is currently hku*. Then if the player decide to buid a house here, the display will be hku**. Furthely, if the player upgraded the house, the display will be hku***, which reaches the limit of developing the land.
 
-Program codes in multiple files: · Set different functions for example getting random chance card or moving steps into different files to improve clarity and construction of the program.
+Element 5: Program codes in multiple files
+· Set different functions for example getting random chance card or moving steps into different files to improve clarity and construction of the program.
