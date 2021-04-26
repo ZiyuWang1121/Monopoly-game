@@ -31,7 +31,7 @@ Game rules:
 Other places needed input from the player but don't appear in this form will come with instruction measages. 
 (2) In this game, the player can roll a die, draw cards, purchase land, and upgrade it (start with 0, The maximum level of land is 2). Meanwhile, the computer's action will be automatically conducted by the program.
 (3) The palyer can check the assets details for him/her and the computer at his/her turn by enter 3 + press the enter key.
-(4) The palyer can check the game description and game rules in the pause page at his/her turn.
+(4) The palyer can check the game description and game rules (a) int the pause page at his/her turn (b) in the mainpage (c) after selecting the game mode for a new game.
 (5) The player's chess in the map is 'A' and computer's chess is 'B'.
 (6) If you are at a computer-owned land, you will have to pay a toll, and vice versa.
 (7) The amount of toll will be 0.1 * current land value. You can upgrade the land to increase its value and get more toll (charge for leveling up: 0.3 * current land value). 
